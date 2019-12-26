@@ -1,0 +1,36 @@
+{
+  "name": "nyc-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:arkhamRejek/nyc-all-files-bug.git",
+  "author": "Paul Brunache <paulbrunache@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/faker": "^4.1.8",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.1",
+    "@types/sinon": "^7.5.1",
+    "chai": "^4.2.0",
+    "faker": "^4.1.0",
+    "mocha": "^6.2.2",
+    "nyc": "^15.0.0",
+    "sinon": "^8.0.1",
+    "sinon-chai": "^3.4.0",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.5.4",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.9.14",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "reflect-metadata": "^0.1.13"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "test": "nyc mocha 'test/**/*.spec.ts'",
+    "compile": "rm -rf dist && tsc -p tsconfig.build.json"
+  }
+}

@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "allowJs": true,
+        "lib": [
+            "dom",
+            "es6",
+            "es2017",
+            "esnext.asynciterable"
+        ],
+        "sourceMap": false,
+        "outDir": "./dist",
+        "moduleResolution": "node",
+        "removeComments": true,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "strictFunctionTypes": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": false,
+        "noFallthroughCasesInSwitch": true,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@/*": [
+                "./*"
+            ],
+            "@middleware/*": [
+                "middleware/*"
+            ],
+            "@services/*": [
+                "services/*"
+            ],
+            "@test-helper": [
+                "../test/helper/index.ts"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "src/**/*.ts",
+        "test/**/*.ts",
+    ]
+}
